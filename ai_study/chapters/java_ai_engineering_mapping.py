@@ -43,3 +43,13 @@ def run() -> dict[str, object]:
     """运行第 14 课演示：输出配额判断和成本估算。"""
     record = UsageRecord("u-001", 800, 200, "low-cost-model")
     return {"title": TITLE, "allowed": allow_request(record, 1500), "cost": estimate_cost(record, 0.002)}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

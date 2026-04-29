@@ -48,3 +48,13 @@ def run() -> dict[str, object]:
         "Cost policy: cache repeated questions and limit very long inputs.",
     ]
     return {"title": TITLE, "qa": answer_with_retrieval("Who can search project documents?", docs)}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

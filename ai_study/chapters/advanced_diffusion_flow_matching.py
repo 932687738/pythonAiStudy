@@ -39,3 +39,13 @@ def run() -> dict[str, object]:
     """运行第 22 课演示：加噪、还原和 flow target。"""
     xt = ddpm_noisy_sample(2.0, -0.3, 0.81)
     return {"title": TITLE, "noisy_sample": round(xt, 4), "recovered_x0": round(predict_x0_from_noise(xt, -0.3, 0.81), 4), "flow_target": flow_matching_target(0.2, 1.0)}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

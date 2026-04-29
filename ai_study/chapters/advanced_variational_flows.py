@@ -44,3 +44,13 @@ def run() -> dict[str, object]:
     kl = gaussian_kl_to_standard_normal(mu=0.2, sigma=0.8)
     flow_y, log_det = affine_coupling_forward(1.0, 2.0, shift=0.3, log_scale=-0.1)
     return {"title": TITLE, "kl": round(kl, 4), "flow_y": tuple(round(v, 4) for v in flow_y), "log_det": log_det}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

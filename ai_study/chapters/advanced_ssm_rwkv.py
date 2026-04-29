@@ -49,3 +49,13 @@ def run() -> dict[str, object]:
         "ssm": [round(v, 4) for v in ssm_recurrence([1, 2, 0, 1], 0.7, 0.5, 1.2)],
         "rwkv_mix": [round(v, 4) for v in rwkv_time_mix([1, 0, 3, 2], 0.4)],
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

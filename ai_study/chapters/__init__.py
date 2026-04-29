@@ -1,12 +1,15 @@
-"""章节注册表和统一运行入口。
+"""Chapter registry.
 
-每个课程章节都实现成一个独立模块，并在 ``CHAPTERS`` 中登记章节号和模块名。
-这样 ``main.py`` 不需要知道每章文件叫什么，只需要调用 ``run_chapter("03")``。
+Each course chapter is implemented as an independent module. The registry is
+kept only for indexing, documentation, and tests; chapter examples should be
+run directly, for example:
 
-如果以后新增第 27 课，只需要：
-1. 在 ``ai_study/chapters`` 下新增模块；
-2. 在 ``CHAPTERS`` 中增加 ``"27": "module_name"``；
-3. 确保新模块提供 ``TITLE`` 和 ``run()``。
+``python -m ai_study.chapters.machine_learning_workflow``
+
+To add a new chapter:
+1. Add a module under ``ai_study/chapters``.
+2. Register the module name in ``CHAPTERS``.
+3. Provide ``TITLE`` and ``run()`` in the new module.
 """
 
 from __future__ import annotations
@@ -45,11 +48,7 @@ CHAPTERS: dict[str, str] = {
 
 
 def load(chapter: str):
-    """按章节号动态导入模块。
-
-    ``zfill(2)`` 允许用户输入 ``3`` 或 ``03``，都能定位到第 3 课。
-    动态导入让章节模块保持懒加载：只有真正运行某一章时才加载对应代码。
-    """
+    """Load a chapter module by number."""
     key = chapter.zfill(2)
     if key not in CHAPTERS:
         raise KeyError(f"unknown chapter: {chapter}")
@@ -57,7 +56,7 @@ def load(chapter: str):
 
 
 def list_chapters() -> list[tuple[str, str]]:
-    """返回所有已登记章节的编号和标题。"""
+    """Return registered chapter numbers and titles."""
     rows = []
     for key in sorted(CHAPTERS):
         module = load(key)
@@ -66,6 +65,9 @@ def list_chapters() -> list[tuple[str, str]]:
 
 
 def run_chapter(chapter: str):
-    """运行指定章节的 ``run()`` 演示函数。"""
+    """Run a chapter for tests or programmatic use.
+
+    Command-line usage should prefer each chapter's own module entry.
+    """
     module = load(chapter)
     return module.run()

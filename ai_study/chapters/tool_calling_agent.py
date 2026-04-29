@@ -59,3 +59,13 @@ def run_agent(goal: str) -> list[str]:
 def run() -> dict[str, object]:
     """运行第 11 课演示：展示一次工具调用轨迹。"""
     return {"title": TITLE, "trace": run_agent("calculate 12 * (3 + 1)")}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

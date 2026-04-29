@@ -62,3 +62,13 @@ def train_price_model() -> dict[str, object]:
 def run() -> dict[str, object]:
     """运行第 3 课演示：输出完整工作流和模型指标。"""
     return {"title": TITLE, "workflow": ["load", "split", "train", "evaluate"], "model": train_price_model()}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

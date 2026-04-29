@@ -37,3 +37,13 @@ def run() -> dict[str, object]:
         user="Answer this question from policy: {question}",
     )
     return {"title": TITLE, "messages": template.render(product="CRM", question="How do refunds work?")}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

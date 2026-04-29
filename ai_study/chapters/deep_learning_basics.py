@@ -58,3 +58,13 @@ def train_tiny_network(epochs: int = 200, lr: float = 0.03) -> dict[str, object]
 def run() -> dict[str, object]:
     """运行第 6 课演示：返回训练后的参数和一个样本预测。"""
     return {"title": TITLE, "training_loop": train_tiny_network()}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

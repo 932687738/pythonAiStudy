@@ -56,3 +56,13 @@ def run() -> dict[str, object]:
         "RAG retrieves documents before answering questions.",
     ]
     return {"title": TITLE, "results": [(round(score, 4), doc) for score, doc in semantic_search("document question retrieval", docs)]}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

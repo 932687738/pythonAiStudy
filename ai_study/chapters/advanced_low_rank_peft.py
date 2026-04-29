@@ -40,3 +40,13 @@ def run() -> dict[str, object]:
         "trainable_params": count_trainable_lora_params(4096, 4096, 8),
         "toy_update": [[round(v, 4) for v in row] for row in update],
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

@@ -49,3 +49,13 @@ def run() -> dict[str, object]:
         "scores": score_summary(scores),
         "paths": {key: str(value) for key, value in project_paths(Path.cwd()).items()},
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

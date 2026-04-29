@@ -53,3 +53,13 @@ def run() -> dict[str, object]:
         "info_nce": round(info_nce([1, 0], [0.9, 0.1], [[0, 1], [-1, 0]]), 4),
         "cka": round(linear_cka([[1, 2], [2, 3], [3, 4]], [[2, 1], [3, 2], [4, 3]]), 4),
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

@@ -65,3 +65,13 @@ def run() -> dict[str, object]:
     attrs = integrated_gradients(lambda values: values[0] ** 2 + 3 * values[1], [2.0, 1.0])
     probe = linear_probe([[1, 1], [1.2, 0.9], [-1, -1], [-0.8, -1.2]], [1, 1, 0, 0])
     return {"title": TITLE, "attribution": [round(v, 4) for v in attrs], "probe_accuracy": probe["accuracy"], "patched": activation_patch([1, 2, 3], [9, 9, 9], 1)}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

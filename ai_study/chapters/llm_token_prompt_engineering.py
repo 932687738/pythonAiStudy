@@ -51,3 +51,13 @@ def run() -> dict[str, object]:
     """运行第 8 课演示：构造 Prompt 并估算 token。"""
     prompt = build_prompt("Summarize the policy", "Refunds are allowed within 7 days.", "three bullets")
     return {"title": TITLE, "tokens": rough_token_count(prompt), "checks": prompt_quality_checks(prompt)}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

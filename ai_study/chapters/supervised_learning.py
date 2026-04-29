@@ -66,3 +66,13 @@ def run() -> dict[str, object]:
         "regression": train_price_model(),
         "classification": train_churn_classifier(),
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

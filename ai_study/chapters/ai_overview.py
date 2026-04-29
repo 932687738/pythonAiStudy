@@ -43,3 +43,13 @@ def run() -> dict[str, object]:
         "layers": ai_application_layers(),
         "example_task": classify_ai_task("answer questions from project documents"),
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

@@ -42,3 +42,13 @@ def run() -> dict[str, object]:
     """运行第 18 课演示：输出 AdamW 更新和 SAM 扰动。"""
     param, m, v = adamw_step(param=1.0, grad=0.25, m=0.0, v=0.0, step=1)
     return {"title": TITLE, "adamw_param": round(param, 6), "moments": [round(m, 6), round(v, 6)], "sam": [round(x, 6) for x in sam_perturbation([3.0, 4.0])]}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

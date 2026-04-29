@@ -37,3 +37,13 @@ def grpo_advantages(rewards: Vector, eps: float = 1e-8) -> Vector:
 def run() -> dict[str, object]:
     """运行第 23 课演示：输出 DPO 损失和优势值。"""
     return {"title": TITLE, "dpo_loss": round(dpo_loss(-1.0, -2.2, -1.1, -1.9), 4), "advantages": [round(v, 4) for v in grpo_advantages([1.0, 0.5, 2.0])]}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

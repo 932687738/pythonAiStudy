@@ -54,3 +54,13 @@ def run() -> dict[str, object]:
         "rnn": [round(v, 4) for v in rnn_step([1, 0], [0.2, -0.1], [[0.4, 0.1], [0.2, 0.5]], [[0.3, 0.1], [0.0, 0.2]], [0, 0])],
         "attention": [round(v, 4) for v in self_attention([1, 0], [[1, 0], [0, 1]], [[10, 0], [0, 10]])],
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

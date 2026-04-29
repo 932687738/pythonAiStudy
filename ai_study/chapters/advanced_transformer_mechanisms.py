@@ -39,3 +39,13 @@ def run() -> dict[str, object]:
     """运行第 19 课演示：输出注意力熵和归纳头分数。"""
     attn = [[0.8, 0.2], [0.5, 0.5]]
     return {"title": TITLE, "entropy": [round(v, 4) for v in attention_entropy(attn)], "induction_score": induction_head_score(["A", "B", "A", "B"], ["X", "A", "B", "A"])}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

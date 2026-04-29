@@ -42,3 +42,13 @@ def run() -> dict[str, object]:
     """运行第 24 课演示：输出 KV Cache 估算和投机接受率。"""
     cache = kv_cache_gib(layers=32, tokens=8192, hidden_size=4096)
     return {"title": TITLE, "kv_cache_gib": round(cache, 3), "int8_cache_gib": round(quantized_cache_gib(cache), 3), "acceptance": speculative_acceptance(["a", "b", "x"], ["a", "b", "c"])}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

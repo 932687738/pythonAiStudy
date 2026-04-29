@@ -44,3 +44,13 @@ def run() -> dict[str, object]:
     logits = [[2.0, 0.1, 1.0], [0.2, 2.5, 1.2], [0.4, 1.1, 2.2]]
     routes = top_k_router(logits)
     return {"title": TITLE, "routes": routes, "load": [round(v, 4) for v in load_balance(routes, 3)]}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

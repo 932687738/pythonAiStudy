@@ -47,3 +47,13 @@ def run() -> dict[str, object]:
     """运行第 13 课演示：执行一次带记忆的应用链。"""
     memory = ConversationMemory()
     return {"title": TITLE, "answer": chain("Find project policy", memory), "memory": memory.items}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

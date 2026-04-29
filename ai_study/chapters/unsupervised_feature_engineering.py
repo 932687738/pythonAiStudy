@@ -49,3 +49,13 @@ def cluster_customers() -> dict[str, object]:
 def run() -> dict[str, object]:
     """运行第 5 课演示：输出聚类标签和簇中心。"""
     return {"title": TITLE, "clustering": cluster_customers()}
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

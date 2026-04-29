@@ -49,3 +49,13 @@ def run() -> dict[str, object]:
         "probabilities": [round(v, 4) for v in softmax(logits)],
         "gradient_of_x2_plus_y2": [round(v, 4) for v in grad],
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()

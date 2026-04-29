@@ -47,3 +47,13 @@ def run() -> dict[str, object]:
         "top_eigenvector": [round(v, 4) for v in vector],
         "outlier_score": round(spectral_outlier_score([0.9, 1.0, 1.1, eigenvalue]), 4),
     }
+
+def main() -> None:
+    """Run this chapter as an independent script."""
+    from ai_study.chapter_output import print_result
+
+    print_result(run())
+
+
+if __name__ == "__main__":
+    main()
