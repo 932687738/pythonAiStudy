@@ -39,47 +39,47 @@
 | 36 | Python 虚拟环境的创建 | 36_virtual_environment.py | DONE |
 | 37 | Python 类型注解 | 37_type_annotations.py | DONE |
 | 38 | Python3 标准库概览 | 38_stdlib_overview.py | DONE |
-| 39 | Python3 实例 | 39_examples.py | TODO |
-| 40 | Python 测验 | 40_quiz.py | TODO |
-| 41 | Python3 正则表达式 | 41_regex.py | TODO |
-| 42 | Python3 CGI编程 | 42_cgi_programming.py | TODO |
-| 43 | Python3 MySQL(mysql-connector) | 43_mysql_connector.py | TODO |
-| 44 | Python3 MySQL(PyMySQL) | 44_mysql_pymysql.py | TODO |
-| 45 | Python3 网络编程 | 45_network_programming.py | TODO |
-| 46 | Python3 SMTP发送邮件 | 46_smtp_email.py | TODO |
-| 47 | Python3 多线程 | 47_multithreading.py | TODO |
-| 48 | Python3 XML 解析 | 48_xml_parsing.py | TODO |
-| 49 | Python3 JSON | 49_json_tutorial.py | TODO |
-| 50 | Python3 日期和时间 | 50_date_and_time.py | TODO |
-| 51 | Python3 内置函数 | 51_built_in_functions.py | TODO |
-| 52 | Python3 MongoDB | 52_mongodb.py | TODO |
-| 53 | Python3 urllib | 53_urllib_tutorial.py | TODO |
-| 54 | Python uWSGI 安装配置 | 54_uwsgi_installation.py | TODO |
-| 55 | Python3 pip | 55_pip_installation.py | TODO |
-| 56 | Python3 operator | 56_operator_module.py | TODO |
-| 57 | Python math | 57_math_module.py | TODO |
-| 58 | Python requests | 58_requests_tutorial.py | TODO |
-| 59 | Python random | 59_random_module.py | TODO |
-| 60 | Python OpenAI | 60_openai_tutorial.py | TODO |
-| 61 | Python 有用的资源 | 61_useful_resources.py | TODO |
-| 62 | Python AI 绘画 | 62_ai_drawing.py | TODO |
-| 63 | Python statistics | 63_statistics_module.py | TODO |
-| 64 | Python hashlib | 64_hashlib_module.py | TODO |
-| 65 | Python 量化 | 65_quantitative_finance.py | TODO |
-| 66 | Python pyecharts | 66_pyecharts_tutorial.py | TODO |
-| 67 | Python selenium 库 | 67_selenium_tutorial.py | TODO |
-| 68 | Python 爬虫 | 68_crawling.py | TODO |
-| 69 | Python Scrapy 库 | 69_scrapy_tutorial.py | TODO |
-| 70 | Python Markdown | 70_markdown_tutorial.py | TODO |
-| 71 | Python sys 模块 | 71_sys_module.py | TODO |
-| 72 | Python Pickle 模块 | 72_pickle_module.py | TODO |
-| 73 | Python subprocess 模块 | 73_subprocess_module.py | TODO |
-| 74 | Python queue 模块 | 74_queue_module.py | TODO |
-| 75 | Python StringIO 模块 | 75_stringio_module.py | TODO |
-| 76 | Python logging 模块 | 76_logging_module.py | TODO |
-| 77 | Python datetime 模块 | 77_datetime_module.py | TODO |
-| 78 | Python re 模块 | 78_re_module.py | TODO |
-| 79 | Python csv 模块 | 79_csv_module.py | TODO |
-| 80 | Python threading 模块 | 80_threading_module.py | TODO |
-| 81 | Python asyncio 模块 | 81_asyncio_module.py | TODO |
-| 82 | Python PyQt | 82_pyqt_tutorial.py | TODO |
+| 39 | Python3 实例 | 39_examples.py | DONE |
+| 40 | Python 测验 | 40_quiz.py | DONE |
+| 41 | Python3 正则表达式 | 41_regex.py | DONE |
+| 42 | Python3 CGI编程 | 42_cgi_programming.py | DONE |
+| 43 | Python3 MySQL(mysql-connector) | 43_mysql_connector.py | DONE |
+| 44 | Python3 MySQL(PyMySQL) | 44_mysql_pymysql.py | DONE |
+| 45 | Python3 网络编程 | 45_network_programming.py | DONE |
+| 46 | Python3 SMTP发送邮件 | 46_smtp_email.py | DONE |
+| 47 | Python3 多线程 | 47_multithreading.py | DONE |
+| 48 | Python3 XML 解析 | 48_xml_parsing.py | DONE |
+| 49 | Python3 JSON | 49_json_tutorial.py | DONE |
+| 50 | Python3 日期和时间 | 50_date_and_time.py | DONE |
+| 51 | Python3 内置函数 | 51_built_in_functions.py | DONE |
+| 52 | Python3 MongoDB | 52_mongodb.py | DONE |
+| 53 | Python3 urllib | 53_urllib_tutorial.py | DONE |
+| 54 | Python uWSGI 安装配置 | 54_uwsgi_installation.py | DONE |
+| 55 | Python3 pip | 55_pip_installation.py | DONE |
+| 56 | Python3 operator | 56_operator_module.py | DONE |
+| 57 | Python math | 57_math_module.py | DONE |
+| 58 | Python requests | 58_requests_tutorial.py | DONE |
+| 59 | Python random | 59_random_module.py | DONE |
+| 60 | Python OpenAI | 60_openai_tutorial.py | DONE |
+| 61 | Python 有用的资源 | 61_useful_resources.py | DONE |
+| 62 | Python AI 绘画 | 62_ai_drawing.py | DONE |
+| 63 | Python statistics | 63_statistics_module.py | DONE |
+| 64 | Python hashlib | 64_hashlib_module.py | DONE |
+| 65 | Python 量化 | 65_quantitative_finance.py | DONE |
+| 66 | Python pyecharts | 66_pyecharts_tutorial.py | DONE |
+| 67 | Python selenium 库 | 67_selenium_tutorial.py | DONE |
+| 68 | Python 爬虫 | 68_crawling.py | DONE |
+| 69 | Python Scrapy 库 | 69_scrapy_tutorial.py | DONE |
+| 70 | Python Markdown | 70_markdown_tutorial.py | DONE |
+| 71 | Python sys 模块 | 71_sys_module.py | DONE |
+| 72 | Python Pickle 模块 | 72_pickle_module.py | DONE |
+| 73 | Python subprocess 模块 | 73_subprocess_module.py | DONE |
+| 74 | Python queue 模块 | 74_queue_module.py | DONE |
+| 75 | Python StringIO 模块 | 75_stringio_module.py | DONE |
+| 76 | Python logging 模块 | 76_logging_module.py | DONE |
+| 77 | Python datetime 模块 | 77_datetime_module.py | DONE |
+| 78 | Python re 模块 | 78_re_module.py | DONE |
+| 79 | Python csv 模块 | 79_csv_module.py | DONE |
+| 80 | Python threading 模块 | 80_threading_module.py | DONE |
+| 81 | Python asyncio 模块 | 81_asyncio_module.py | DONE |
+| 82 | Python PyQt | 82_pyqt_tutorial.py | DONE |
